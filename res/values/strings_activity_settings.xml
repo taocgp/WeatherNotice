@@ -1,0 +1,80 @@
+ <resources>
+
+    <string name="title_activity_settings">设置</string>
+    
+    <string name="pref_title_notice">贴心提醒</string>
+    <string name="pref_description_notice">极端天气提前通知</string>
+    
+    <string name="pref_title_notice_weather"> 阴晴状况 </string>
+    <string-array name="pref_notice_weather_titles">
+        <item>有雨提醒</item>
+        <item>有雪提醒</item>
+        <item>有雨、有雪提醒</item>
+    </string-array>
+    <string-array name="pref_notice_weather_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+    <string name="pref_title_notice_temperature_reduction">降温提醒</string>
+    <string-array name="pref_notice_temperature_reduction_titles">
+        <item>>3℃</item>
+        <item>>5℃</item>
+        <item>>8℃</item>
+        <item>>10℃</item>
+    </string-array>
+    <string-array name="pref_notice_temperature_reduction_values">
+        <item>3</item>
+        <item>5</item>
+        <item>8</item>
+        <item>10</item>
+    </string-array>
+    
+    <string name="pref_title_notice_temperature_rise">升温提醒</string>
+    <string-array name="pref_notice_temperature_rise_titles">
+        <item>>3℃</item>
+        <item>>5℃</item>
+        <item>>8℃</item>
+        <item>>10℃</item>
+    </string-array>
+    <string-array name="pref_notice_temperature_rise_values">
+        <item>3</item>
+        <item>5</item>
+        <item>8</item>
+        <item>10</item>
+    </string-array>
+    
+    <string name="pref_title_notice_time">提醒时机</string>
+    <string-array name="pref_notice_time_titles">
+        <item>当天早上</item>
+        <item>提前一天</item>
+        <item>提前两天</item>
+    </string-array>
+    <string-array name="pref_notice_time_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+    <string name="pref_title_refresh_frequency">自动刷新频率</string>
+    <string-array name="pref_refresh_frequency_titles">
+        <item>4小时</item>
+        <item>8小时</item>
+        <item>12小时</item>
+        <item>一天</item>
+        <item>关闭自动刷新</item>
+    </string-array>
+    <string-array name="pref_refresh_frequency_values">
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
+        <item>24</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_help">帮助页</string>
+    <string name="pref_title_about_app">关于贴心天气</string>
+    
+    <string name="pref_ringtone_silent">Silent</string>
+</resources>

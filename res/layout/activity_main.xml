@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_bg_rain_night"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    <!--  
+    <LinearLayout
+        android:id="@+id/day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp" 
+            android:gravity="center_horizontal"
+            android:text="@string/today"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/day2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp" 
+            android:gravity="center_horizontal"
+            android:text="@string/tomorrow"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/day3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp" 
+            android:gravity="center_horizontal"
+            android:text="@string/third_day"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/day4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp" 
+            android:gravity="center_horizontal"
+            android:text="@string/fourth_day"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+-->
+    <TextView
+        android:id="@+id/tempraRangeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tempraText"
+        android:layout_below="@+id/tempraText"
+        android:text="@string/weatherRange"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tempraText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weatherText"
+        android:layout_below="@+id/weatherText"
+        android:text="@string/temprature"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/weatherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tempraPic"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/tempraPic"
+        android:text="@string/weather"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/tempraPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/wip_sunny" />
+    
+    
+        <com.justao.weathernotice.ultil.TrendView
+            android:id="@+id/trendView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tempraPic">
+        </com.justao.weathernotice.ultil.TrendView>
+    
+</RelativeLayout>

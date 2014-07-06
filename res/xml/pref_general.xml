@@ -1,0 +1,82 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notice_checkbox"
+        android:summary="@string/pref_description_notice"
+        android:title="@string/pref_title_notice" />
+        
+    <ListPreference
+        android:key="notice_weather"
+        android:title="@string/pref_title_notice_weather" 
+        android:dependency="notice_checkbox"
+        android:defaultValue="3"
+        android:entries="@array/pref_notice_weather_titles"
+        android:entryValues="@array/pref_notice_weather_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"/>
+        
+    <ListPreference
+        android:key="notice_temperature_reduction"
+        android:title="@string/pref_title_notice_temperature_reduction" 
+        android:dependency="notice_checkbox"
+        android:defaultValue="5"
+        android:entries="@array/pref_notice_temperature_reduction_titles"
+        android:entryValues="@array/pref_notice_temperature_reduction_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"/>
+        
+    <ListPreference
+        android:key="notice_temperature_rise"
+        android:title="@string/pref_title_notice_temperature_rise" 
+        android:dependency="notice_checkbox"
+        android:defaultValue="5"
+        android:entries="@array/pref_notice_temperature_rise_titles"
+        android:entryValues="@array/pref_notice_temperature_rise_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"/>
+        
+    <ListPreference
+        android:key="notice_time"
+        android:title="@string/pref_title_notice_time" 
+        android:dependency="notice_checkbox"
+        android:defaultValue="1"
+        android:entries="@array/pref_notice_time_titles"
+        android:entryValues="@array/pref_notice_time_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"/>
+        
+    <ListPreference
+        android:key="refresh_frequency"
+        android:defaultValue="12"
+        android:entries="@array/pref_refresh_frequency_titles"
+        android:entryValues="@array/pref_refresh_frequency_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_refresh_frequency" />
+
+    <RingtonePreference
+        android:defaultValue="content://settings/system/notification_sound"
+        android:key="help"
+        android:ringtoneType="notification"
+        android:title="@string/pref_title_help" />
+    
+    <Preference android:title="@string/pref_title_about_app" >
+        <intent android:action="android.settings.SYNC_SETTINGS" />
+    </Preference>
+    
+</PreferenceScreen>
+
+<!--  
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapWords"
+        android:key="example_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name" />
+        
+-->
